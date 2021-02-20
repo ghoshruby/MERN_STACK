@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Form validation</title>
+<link rel="stylesheet" href="/examples/css/form-style.css">
+<script src="valitator.js"></script>
+</head>
+<body>
+<form name="contactForm" onsubmit="return validateForm()">
+    <h2>Application Form</h2>
+    <div class="row">
+        <label>Full Name:</label>
+        <br>
+        <input type="text" name="name">
+        <div class="error" id="nameErr"></div>
+        <br>
+    </div>
+    <div class="row">
+        <label>Email Address:</label>
+        <br>
+        <input type="text" name="email">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <br>
+    <div class="row">
+        <label>Mobile Number</label>
+        <br>
+        <input type="text" name="mobile" maxlength="10">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <br>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</body>
+</html>
