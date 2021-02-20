@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let info = {
+        //     name: prompt("Enter name"),
+        //     email: prompt('Enter email'),
+
+        //     book: function (){
+        //         return (this.name +" "+this.email)
+        //     }
+        // }
+        // let value = (info.book());
+        // var arr = []
+        // arr.push(value)
+        // document.write(""+value)
+
+  
+    objectName = {
+        funName: function(){
+            var arr = []
+            number = parseInt(prompt('Enter how many number you want to store:'))
+            for(var i = 0; i < number; i++)
+            {
+                arr[i] = prompt('Enter numbers ' + (i+1));
+            }
+            return arr
+        }
+    }
+    document.write(objectName.funName()); 
+
+
+       </script>
+</body>
+</html>
